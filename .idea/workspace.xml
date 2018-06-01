@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5bdcaf5f-f87b-45cc-abd0-7fb2b3bd1a28" name="Default" comment="" />
+    <list default="true" id="5bdcaf5f-f87b-45cc-abd0-7fb2b3bd1a28" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/end.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/script.js" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -19,8 +23,8 @@
           <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/index.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="1076">
-                  <caret line="54" selection-start-line="54" selection-end-line="54" />
+                <state relative-caret-position="440">
+                  <caret line="22" lean-forward="true" selection-end-line="76" selection-end-column="7" />
                 </state>
               </provider>
             </entry>
@@ -28,7 +32,7 @@
           <file leaf-file-name="main.html" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/main.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="236">
+                <state relative-caret-position="56">
                   <caret line="204" column="21" lean-forward="true" selection-start-line="204" selection-start-column="21" selection-end-line="204" selection-end-column="21" />
                   <folding>
                     <element signature="n#div#0;n#main#0;n#body#0;n#html#0;n#!!top" />
@@ -44,8 +48,17 @@
           <file leaf-file-name="script.js" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/js/script.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="570">
-                  <caret line="464" column="12" selection-start-line="464" selection-start-column="12" selection-end-line="464" selection-end-column="12" />
+                <state relative-caret-position="690">
+                  <caret line="552" column="31" lean-forward="true" selection-start-line="552" selection-start-column="31" selection-end-line="552" selection-end-column="31" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="end.html" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/end.html">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="950">
+                  <caret line="76" column="7" selection-start-line="76" selection-start-column="7" selection-end-line="76" selection-end-column="7" />
                 </state>
               </provider>
             </entry>
@@ -125,6 +138,7 @@
         <option value="$PROJECT_DIR$/sass/main.sass" />
         <option value="$PROJECT_DIR$/sass/components/game.sass" />
         <option value="$PROJECT_DIR$/main.html" />
+        <option value="$PROJECT_DIR$/end.html" />
         <option value="$PROJECT_DIR$/js/script.js" />
       </list>
     </option>
@@ -221,12 +235,12 @@
       <option name="presentableId" value="Default" />
       <updated>1527435924351</updated>
       <workItem from="1527435925637" duration="13305000" />
-      <workItem from="1527850334989" duration="11692000" />
+      <workItem from="1527850334989" duration="13922000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="24997000" />
+    <option name="totallyTimeSpent" value="27227000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1928" y="-5" width="1936" height="1176" extended-state="6" />
@@ -349,14 +363,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1076">
-          <caret line="54" selection-start-line="54" selection-end-line="54" />
+        <state relative-caret-position="440">
+          <caret line="22" lean-forward="true" selection-end-line="76" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/end.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="950">
+          <caret line="76" column="7" selection-start-line="76" selection-start-column="7" selection-end-line="76" selection-end-column="7" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/main.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="236">
+        <state relative-caret-position="56">
           <caret line="204" column="21" lean-forward="true" selection-start-line="204" selection-start-column="21" selection-end-line="204" selection-end-column="21" />
           <folding>
             <element signature="n#div#0;n#main#0;n#body#0;n#html#0;n#!!top" />
@@ -370,8 +391,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/js/script.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="570">
-          <caret line="464" column="12" selection-start-line="464" selection-start-column="12" selection-end-line="464" selection-end-column="12" />
+        <state relative-caret-position="690">
+          <caret line="552" column="31" lean-forward="true" selection-start-line="552" selection-start-column="31" selection-end-line="552" selection-end-column="31" />
         </state>
       </provider>
     </entry>

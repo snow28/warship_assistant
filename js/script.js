@@ -452,28 +452,6 @@ $(document).ready(function() {
     });
 
 
-    var move = 'left';
-
-    $('.move-js').on('click' , function(){
-        $('.game-right').toggleClass('disable');
-        $('.game-left').toggleClass('disable');
-
-        var x = $(this).data('x');
-        var y = $(this).data('y');
-
-        for(var x = 0; x < 20; x++){
-            
-        }
-
-        if( move == "left"){
-            move = 'right';
-        }else{
-            move = "right";
-        }
-        $(this).children('.fa-bomb').removeClass('hide');
-    });
-
-
 
     var test_1 = {
         "ships" : {
@@ -495,7 +473,7 @@ $(document).ready(function() {
         ],
         "cell_3" : [
             [['e',1],['e',2],['e',3]],
-            [['e',6],['7',0],['8',0]]
+            [['e',6],['e',7],['e',8]]
         ],
         "cell_4" : [
             [['l',1],['l',2],['l',3],['l',4]]
@@ -522,7 +500,7 @@ $(document).ready(function() {
         ],
         "cell_3" : [
             [['e',1],['e',2],['e',3]],
-            [['e',6],['7',0],['8',0]]
+            [['e',6],['e',7],['S',8]]
         ],
         "cell_4" : [
             [['l',1],['l',2],['l',3],['l',4]]
@@ -532,11 +510,56 @@ $(document).ready(function() {
     var cells_left = [
         test_1.cell_1[0],test_1.cell_1[1],test_1.cell_1[2],test_1.cell_1[3],
         test_1.cell_2[0][0],test_1.cell_2[0][1],test_1.cell_2[1][0],test_1.cell_2[1][1],test_1.cell_2[2][0],test_1.cell_2[2][1],
-        test_1.cell_3[0][0],test_1.cell_3[0][1],test_1.cell_3[0][2],test_1.cell_3[0][0],test_1.cell_3[0][1],test_1.cell_3[0][2],
-        test_1.cell_4[0][1],test_1.cell_4[0][1],test_1.cell_4[0][2],test_1.cell_4[0][3]
+        test_1.cell_3[0][0],test_1.cell_3[0][1],test_1.cell_3[0][2],test_1.cell_3[1][0],test_1.cell_3[1][1],test_1.cell_3[1][2],
+        test_1.cell_4[0][0],test_1.cell_4[0][1],test_1.cell_4[0][2],test_1.cell_4[0][3]
     ];
-    console.log(cells_left);
-    var cells_right = [];
+    var cells_right = cells_left;
+
+    var move = 'left';
+
+    var lifes_left = 4;
+    var lifes_right = 20;
+
+
+    $('.move-js').on('click' , function(){
+        var x = $(this).data('x');
+        var y = $(this).data('y');
+        var damaged = false;
+
+        for(var z = 0; z < 20; z++){
+            if(move =='left'){
+                if( x == cells_left[z][0] && y == cells_left[z][1]){
+                    damaged = true;
+                    $(this).children('img').removeClass('hide');
+                    lifes_left--;
+                }
+            }else if(move == 'right'){
+                if( x == cells_right[z][0] && y == cells_right[z][1]){
+                    damaged = true;
+                    $(this).children('img').removeClass('hide');
+                    lifes_right--;
+                }
+            }
+        }
+
+        if(damaged == false){
+            $(this).children('.fa-bomb').removeClass('hide');
+            $('.game-right').toggleClass('disable');
+            $('.game-left').toggleClass('disable');
+
+            if( move == "left"){
+                move = 'right';
+            }else{
+                move = "right";
+            }
+        }
+        $(this).addClass('disable');
+        if( lifes_left <= 0 || lifes_right <= 0 ){
+            window.location.replace('./index.html');
+        }
+        console.log('Lifes left : ' + lifes_left);
+        console.log('Lifes right : ' + lifes_right);
+    });
 
 
 });
